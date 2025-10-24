@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import string
-ans = string.ascii_lowercase
-print(ans)
+for letter in 'abcdefghijklmnopqrstuvwxyz':
+    print(letter, end='')
