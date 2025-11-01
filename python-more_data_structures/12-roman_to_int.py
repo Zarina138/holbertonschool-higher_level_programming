@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+
 def roman_to_int(roman_string):
-    if roman_string is None or type(roman_string) is not str:
+    if roman_string is None:
+        return 0
+
+    if not isinstance(roman_string, str):
+        return 0
+
+    if roman_string == "":
         return 0
 
     roman_dict = {
@@ -9,14 +16,14 @@ def roman_to_int(roman_string):
     }
 
     total = 0
-    prev_value = 0
+    prev = 0
 
     for ch in roman_string:
         value = roman_dict.get(ch, 0)
-        if prev_value < value and prev_value != 0:
-            total = total - prev_value
-        
+        if prev < value and prev != 0:
+            total = total - (2 * prev)
+
         total = total + value
-        prev_value = value
+        prev = value
 
     return total
