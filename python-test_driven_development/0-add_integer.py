@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-This module defines a function that adds two integers.
+This module provides a function that adds two integers.
+It checks that inputs are integers or floats and raises
+a TypeError if not. Floats are first casted to integers.
+The result is returned as an integer value.
 """
 def add_integer(a, b=98):
     """Add two integers or floats."""
