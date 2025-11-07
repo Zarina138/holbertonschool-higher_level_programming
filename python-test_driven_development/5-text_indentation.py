@@ -4,6 +4,7 @@ This module has one function that adds two new lines
 after each '.', '?', or ':' in a given text.
 """
 
+
 def text_indentation(text):
     """
     Prints text with 2 new lines after '.', '?' and ':' characters.
