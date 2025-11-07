@@ -27,7 +27,10 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     if div == float('inf') or div == float('-inf'):
-        return [[0.0 for _ in row] for row in matrix]
+        return [
+            [0.0 for _ in row]
+            for row in matrix
+        ]
 
     if not matrix or not isinstance(matrix, list):
         raise TypeError(
@@ -56,11 +59,9 @@ def matrix_divided(matrix, div):
 
     new_matrix = []
     for row in matrix:
-        new_matrix.append(
-                [
-                round(item / div, 2)
-                for item in row
-                ]
-                )
+        new_matrix.append([
+            round(item / div, 2)
+            for item in row
+        ])
 
     return new_matrix
