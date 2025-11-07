@@ -57,7 +57,11 @@ def matrix_divided(matrix, div):
     new_matrix = []
     for row in matrix:
         new_matrix.append(
-                [round(item / div, 2) for item in row]
-                )
+            [
+                round(item / div, 2)
+                for item in row
+            ]
+        )
 
     return new_matrix
+
