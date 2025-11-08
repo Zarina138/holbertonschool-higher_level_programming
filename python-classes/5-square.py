@@ -12,7 +12,7 @@ class Square:
         Args:
             size (int): side length (default is 0).
         """
-        self.size = size  # check with setter
+        self.size = size
 
     @property
     def size(self):
