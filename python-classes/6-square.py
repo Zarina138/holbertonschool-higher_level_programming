@@ -72,9 +72,10 @@ class Square:
             print("")
             return
 
+        # Print blank lines for vertical space
         for _ in range(self.__position[1]):
             print("")
 
+        # Print rows with spaces for horizontal space, then #
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
-
