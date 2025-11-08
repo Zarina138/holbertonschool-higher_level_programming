@@ -1,21 +1,15 @@
 #!/usr/bin/python3
-"""
-This file makes a Square class with a private size.
-"""
+"""Square class with private size."""
 
 
 class Square:
-    """
-    A Square class that has a size.
-    The size is private for now.
-    """
+    """Class that defines a square by its size."""
 
     def __init__(self, size):
-        """
-        Starts a new Square.
+        """Initialize a new Square.
 
         Args:
-            size: The size of the square.
+            size: size of the square.
         """
         self.__size = size
 
