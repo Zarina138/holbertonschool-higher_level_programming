@@ -48,6 +48,13 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
+    def __str__(self):
+        """Return the rectangle with the character #."""
+        if self.width == 0 or self.height == 0:
+            return ""
+        lines = ["#" * self.width for _ in range(self.height)]
+        return "\n".join(lines)
+
     def __repr__(self):
         """Return a string representation of the rectangle
         to be able to recreate a new instance using eval().
