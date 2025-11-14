@@ -60,4 +60,3 @@ class Rectangle:
         to be able to recreate a new instance using eval().
         """
         return f"Rectangle({self.width}, {self.height})"
-
