@@ -14,7 +14,6 @@ class Rectangle:
         self.height = height
         Rectangle.number_of_instances += 1
 
-
     def area(self):
         """Return the rectangle area."""
         return self.width * self.height
@@ -67,9 +66,7 @@ class Rectangle:
     def __str__(self):
         """Return the rectangle with the character #."""
         lines = []
-        
-        for _ in range(self.height):  
+        for _ in range(self.height):
             line = str(self.print_symbol) * self.width
             lines.append(line)
-
         return "\n".join(lines)
