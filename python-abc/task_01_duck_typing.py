@@ -15,11 +15,11 @@ class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
     def area(self):
-        Radius = abs(self.radius)
-        return math.pi * (Radius ** 2)
+        r = abs(self.radius)
+        return math.pi * (r ** 2)
     def perimeter(self):
-        Radius = abs(self.radius)
-        return 2 * math.pi * Radius
+        r = abs(self.radius)
+        return 2 * math.pi * r
 
 class Rectangle(Shape):
     def __init__(self, width, height):
