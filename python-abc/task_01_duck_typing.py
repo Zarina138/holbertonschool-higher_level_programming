@@ -5,11 +5,11 @@ import math
 class Shape(ABC):
     @abstractmethod
     def area(self):
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def perimeter(self):
-        pass
+        raise NotImplementedError
 
 class Circle(Shape):
     def __init__(self, radius):
