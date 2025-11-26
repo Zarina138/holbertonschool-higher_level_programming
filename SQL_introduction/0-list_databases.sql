@@ -1,2 +1,2 @@
---0-list_databases.sql--
-SHOW DATABASES
+--0-list_databases.sql
+SHOW DATABASES;
