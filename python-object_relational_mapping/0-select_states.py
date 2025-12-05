@@ -12,10 +12,10 @@ if __name__ == "__main__":
 
     db = MySQLdb.connect(
         host="localhost",
-        user = user_name,
-        passwd = password,
-        db = database,
-        port = 3306
+        user=user_name,
+        passwd=password,
+        db=database,
+        port=3306
     )
 
     kursor = db.cursor()
@@ -26,6 +26,6 @@ if __name__ == "__main__":
 
     for row in rows:
         print(row)
-    
+
     kursor.close()
     db.close()
