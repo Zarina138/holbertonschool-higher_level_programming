@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+import sys
+import MySQLdb
+
+if __name__ == "__main__":
+    user_name = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
+
+    db = MySQLdb.connect(
+        host = "localhost",
+        user = user_name,
+        passwd = password,
+        db = database,
+        port = 3306
+    )
+
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    cur.close()    
+    db.close()
