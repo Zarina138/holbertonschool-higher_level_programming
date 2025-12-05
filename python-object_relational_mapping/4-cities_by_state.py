@@ -19,10 +19,10 @@ if __name__ == "__main__":
     )
 
 curs = db.cursor()
-curs.execute("SELECT * FROM cities ORDER BY ASC")
+curs.execute("SELECT * FROM cities ORDER BY id ASC")
 
-rows = db.fetchall()
-for row in rows():
+rows = curs.fetchall()
+for row in rows:
     print(row)
 
 curs.close()
