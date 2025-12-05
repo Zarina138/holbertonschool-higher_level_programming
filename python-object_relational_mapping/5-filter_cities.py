@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a script that takes in the name of a state as an argument 
+"""a script that takes in the name of a state as an argument
 and lists all cities of that state
 """
 import sys
@@ -25,7 +25,7 @@ if __name__ == "__main__":
         "FROM cities JOIN states ON cities.state_id = states.id "
         "WHERE states.name = %s ORDER BY cities.id ASC",
         (state_name,)
-)
+        )
 
     rows = curs.fetchall()
 
