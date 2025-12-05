@@ -5,6 +5,7 @@
 import sys
 import MySQLdb
 
+
 if __name__ == "__main__":
     db = MySQLdb.connect(
         host="localhost",
@@ -15,7 +16,10 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(sys.argv[4])
+
+    state_name = sys.argv[4]
+    query = ("SELECT * FROM states WHERE name = '{}' "
+             "ORDER BY id ASC".format(state_name))
 
     cur.execute(query)
     rows = cur.fetchall()
