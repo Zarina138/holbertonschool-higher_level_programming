@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all values in states table matching the argument (safe from SQL injection)
+"""Lists all values in states table matching the argument
 """
 
 import sys
