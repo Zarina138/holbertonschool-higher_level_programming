@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a script that lists all states with a name starting with N (upper N) from the database 
+a script that lists all states with a name starting with N from the database 
 """
 import sys
 import MySQLdb
@@ -11,11 +11,11 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
 
     db = MySQLdb.connect(
-        host = "localhost",
-        user = user_name,
-        passwd = password,
-        db = db_name,
-        port = 3306
+        host="localhost",
+        user=user_name,
+        passwd=password,
+        db=db_name,
+        port=3306
     )
 
     cur = db.cursor()
@@ -24,5 +24,5 @@ if __name__ == "__main__":
     rows = cur.fetchall()
     for row in rows:
         print(row)
-    cur.close()    
+    cur.close()
     db.close()
