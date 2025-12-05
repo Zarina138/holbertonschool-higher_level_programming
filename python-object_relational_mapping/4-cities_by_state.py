@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- a script that lists all cities from the database
+a script that lists all cities from the database
 """
 import sys
 import MySQLdb
@@ -18,12 +18,12 @@ if __name__ == "__main__":
         port=3306
     )
 
-curs = db.cursor()
-curs.execute("SELECT * FROM cities ORDER BY id ASC")
+    curs = db.cursor()
+    curs.execute("SELECT * FROM cities ORDER BY id ASC")
 
-rows = curs.fetchall()
-for row in rows:
-    print(row)
+    rows = curs.fetchall()
+    for row in rows:
+        print(row)
 
-curs.close()
-db.close()
+    curs.close()
+    db.close()
