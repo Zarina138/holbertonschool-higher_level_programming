@@ -1,1 +1,1 @@
-JAVA SCRIPT DOM MANIPULATION
+Learn Java script 
