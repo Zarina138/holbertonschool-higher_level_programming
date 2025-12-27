@@ -7,3 +7,4 @@ function add (a, b) {
   const second = parseInt(process.argv[3]);
   
   console.log(add(first, second));
+  
