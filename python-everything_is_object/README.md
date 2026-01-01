@@ -1,0 +1,1 @@
+i dont always learn python ,,, but when i do i share my tips and tricks LOL:D
